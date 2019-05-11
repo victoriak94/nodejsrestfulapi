@@ -6,16 +6,12 @@ const app = express();
 
 //NOW WE HAVE THE ABILITY TO CREATE ROUTES!!
 
-//Middlewares
-app.use('/posts', () => {
-    console.log('This is a middleware running')
-})
 //Routes
 app.get("/", (req, res) => {
   res.send("We are on home");
 });
-//there is also app.post, app.delete, app.patch for other CRUD actions
 
+//there is also app.post, app.delete, app.patch for other CRUD actions
 app.get"/posts", (req, res) => {
     res.send("We are on posts");
   });
